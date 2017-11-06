@@ -1,0 +1,38 @@
+.letter {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    margin: 4px 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Trebuchet ms, tahoma, helvetica;
+    vertical-align: middle;
+    color: #FFF;
+    text-shadow: 0px 1px 0px #145E8A;
+    cursor: pointer;
+    background-color: #1888c9;
+    box-shadow: 0px 3px 0px 0px #0b6193;
+    -moz-box-shadow: 0px 2px 0px 0px #0b6193;
+    -ms-box-shadow: 0px 2px 0px 0px #0b6193;
+    -o-box-shadow: 0px 2px 0px 0px #0b6193;
+    text-align: center;
+}
+.letter.blank {
+    background: #423939;
+    cursor: default;
+    box-shadow: inset 0 2px 6px #000, 0 3px 0 0 #29272B;
+}
+
+.letter.used {
+    color: #B3B3B3;
+    background: #FFFFFF;
+    cursor: default;
+    box-shadow: 0px 3px 0px 0px #B9B9B9;
+    text-shadow: none;
+}
