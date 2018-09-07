@@ -2,6 +2,11 @@
     $.fn.PGAnswerInput = function(data) {
         console.log('JSkeyboard v3');
         var answer = data.answer.toUpperCase();
+
+        if(this.length === 0){
+            console.error('this not found')
+            return false;
+        }
         var contentId = '#' + this[0].id;
 
         var letters = [];
@@ -12,7 +17,8 @@
 
         //paramters
         var autoCheckAnswer = data.autoCheckAnswer|| true;
-        var checkAnswerInApi = data.checkAnswerInApi|| true;
+        var checkAnswerInApi =  data.checkAnswerInApi !== undefined?  data.checkAnswerInApi : true;
+
         var exludeLetters = typeof data.excludeLetter !== "undefined" ?  data.excludeLetter : /[ '.,-]/g;
         var maxOtherLetter =  typeof data.maxOtherLetter !== "undefined" ?  data.maxOtherLetter : 5;
 
