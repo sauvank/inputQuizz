@@ -12,6 +12,13 @@ the user can click on the letters or use the keyboard.
 ```
 $(document).ready(function () {
       $('#content-input').PGAnswerInput({'answer':"mcdonald's",functionCallback:YOUR_FUNCTION});
+      
+      
+      // callback user send
+      YOUR_FUNCTION(answerUser){
+     
+      }
+      
   });
 ```
 
