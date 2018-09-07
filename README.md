@@ -11,13 +11,20 @@ the user can click on the letters or use the keyboard.
 
 ```
 $(document).ready(function () {
-      $('#content-input').PGAnswerInput({'answer':"mcdonald's",functionCallback:YOUR_FUNCTION});
+      var PGQuizz = $('#content-input').PGAnswerInput({'answer':"mcdonald's",functionCallback:YOUR_FUNCTION});
       
       
       // callback user send
       YOUR_FUNCTION(answerUser){
      
       }
+      
+      // OR 
+     var PGQuizz = $('#content-input').PGAnswerInput({'answer':"mcdonald's"});
+     
+     $('#valide').on('click',function(){
+            PGQuizz.checkAnswerIsRight(); // return true | false
+     })
       
   });
 ```
