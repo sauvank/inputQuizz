@@ -29,3 +29,9 @@ $(document).ready(function () {
   });
 ```
 
+####Available function : 
+
+ * checkAnswerIsRight
+ * clearAll
+ * BGcolorAnswerLetter
+
